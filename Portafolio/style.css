@@ -1,0 +1,528 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color:white;
+    font-family: 'Outfit', sans-serif;
+    margin: 0;
+}
+
+:root{
+    --color-title:#096386;
+    --color-nav:#c4c4c4;
+    --color-nav-hover:#35373e;
+    --color-par:#090934;
+    --color-subtitle:#fff;
+}
+/* Boton ir al cielo */
+
+  
+/* Header */ 
+
+header{
+    width: 100%;
+    background-image: linear-gradient(135deg, #000000e3 0%, #000000dc 100%), url(img/technology-1283624_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top:0;
+    padding-bottom: 200px;
+}
+
+.header_nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.header_list{
+    color: white;
+    list-style: none;
+}
+
+.header_nav ul a{
+    text-decoration: none;
+    padding:10px 20px;
+}
+
+.header_nav ul a:hover{
+    background-color: #50505059;
+    transition: 0.4s;
+    border-radius: 2px;
+}
+
+.header_titlebox{
+    display: flex;
+    flex-direction: row;
+    margin-top: 25vh;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.header_titlebox_text{
+    text-align: center;
+    line-height:1.5;
+    margin-left: 100px;
+}
+.header_subtitle{
+    color: var(--color-subtitle);
+    font-size:30px;
+    font-weight:300;
+}
+
+.header_title{
+    color: var(--color-title);
+    font-size:50px;
+    font-weight:800;
+}
+
+.header_perfil{
+    width: 200px;
+    height: 200px;
+    border-radius:50%;
+}
+
+
+/* Sobre mi */
+
+.main{
+    width: 90%;
+    margin:auto;
+}
+
+
+.main_about{
+    width: 60%;
+    margin: auto;
+    padding: 120px 0;
+    display: flex;
+    align-items: center;
+    text-align:center;
+    flex-direction: column;
+}
+
+.main_title{
+    color: var(--color-title);
+    font-size: 40px;
+    font-weight:800;
+}
+
+
+.main_presentation{
+    color: var(--color-par);
+    font-size:20px;
+    margin-top: 20px;
+}
+
+.main_cv{
+    background-color: var(--color-title);
+    border-radius: 30px;
+    color: white;
+    text-decoration: none;
+    width:200px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top:20px;
+    padding: 5px 20px;
+    justify-content: space-evenly
+}
+
+.main_cv svg{
+    width:40px;
+    fill: white;
+}
+
+.main_cv:hover{
+    background-color: #0a7daa;
+    transition:0.3s;
+    border-radius: 30px;
+    color: white;
+}
+
+/* HABILIDADES */
+
+.carousel{
+    background-color: rgb(219, 218, 218);
+    margin-top:50px;
+    text-align: center;
+    padding: 20px;
+}
+
+
+.carousel-item img{
+    width: 300px;
+    height: 300px;
+    margin-bottom: 100px;
+}
+
+.carousel-item h5{
+    color: rgb(34, 34, 34);
+    font-size:30px
+}
+
+/* SERVICIOS */
+
+.main_services_world{
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main_services{
+    width:90%;
+    margin: auto;
+    display:flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+}
+
+.main_services svg{
+    width:250px;
+}
+
+.services_icons{
+    width:28%;
+    margin: 0px 2%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services_icons p{
+    margin-top: 30px;
+}
+
+.services_icons h3{
+    margin-bottom: 30px;
+}
+
+.social svg{
+    margin-bottom: 30px;
+}
+
+
+/* Proyectos */
+.main_portafolio{
+    width:90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    padding:110px 0;
+}
+
+.main_portafolio h2{
+    font-size:35px;
+    margin-bottom:80px;
+}
+
+.main_projects{
+    height:100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.main_projects figure{
+    width: 30%;
+    height: 250px;
+    position: relative;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.5);
+}
+
+.main_projects figure a{
+    color: white;
+    text-decoration: none;
+}
+
+.main_projects figure img{
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s ease-in-out;
+    object-fit:cover;
+}
+
+
+
+.main_projects figure .proj_text{
+    position: absolute;
+    width:80%;
+    margin:10%;
+    height:100%;
+    top: 25px;
+    text-align: center;
+    color: white;
+}
+
+.main_projects figure .proj_text p{
+    transform: translate(120%);
+}
+
+.main_projects figure .proj_text h3{
+    transform: translate(-110%);
+}
+
+.main_projects figure:hover img{
+    filter: brightness(20%);
+    
+}
+
+.main_projects figure:hover .proj_text p{
+    transform: translate(0%);
+    transition:.8s;
+}
+.main_projects figure:hover .proj_text h3{
+    transform: translate(0%);
+    transition:.7s;
+}
+
+/*Footer */
+
+footer{
+    background-color: var(--color-title);
+    width: 100%;
+    margin:auto;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+
+.zona_email{
+    width:50%; 
+    margin: auto;
+    color:white;
+    margin-top: 50px;
+}
+.zona_email form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.zona_email input{
+    width:100%;
+    border-radius: 20px;
+    padding:5px 20px;
+    border: white solid 2px;
+}
+
+.zona_email textarea{
+    width:100%;
+    border-radius: 20px;
+    padding:5px 20px;
+    border: white solid 2px;
+    max-width: 100%;
+    max-height: 300px;
+    min-height: 300px;
+}
+
+.zona_email button{
+    background-color:rgba(255, 0, 0, 0);
+    border: white solid 1px;
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+
+.zona_email button:hover{
+    background-color: #0a7daa;
+    transition: 0.3s;
+}
+
+#sendemail{
+    opacity: 0;
+}
+.footer_icons{
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.footer_icons a{
+    color:white;
+    text-decoration: none;
+    display:inline-block;
+    position: relative;
+}
+
+.footer_icons a:after{
+    content:'';
+    position: absolute;
+    width:100%;
+    height:2px;
+    bottom:0;
+    left:0;
+    background-color: white;
+    transform:scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+}
+
+.footer_icons a:hover:after{
+    transform:scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+/* RESPONSIVIDAD */
+
+@media (max-width:800px){
+
+    header{
+        padding-bottom: 100px;
+    }
+    
+    .header_nav ul {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:space-between;
+        padding-bottom: 0;
+    }
+
+    .header_nav ul a{
+        background-color: #5050503f;
+        width: 90%;
+        margin: auto;
+        display: flex;
+        justify-content:center;
+    }
+    
+
+    .header_titlebox{
+        display: flex;
+        flex-direction: column;
+        margin-top: 5vh;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .header_titlebox_text{
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+
+    
+    .header_title{
+        font-weight:600;
+    }
+    
+
+    .header_subtitle{
+        color: var(--color-subtitle);
+        font-size:20px;
+        font-weight:300;
+    }
+    
+    .header_title{
+        color: var(--color-title);
+        font-size:30px;
+        font-weight :600;
+    }
+    
+    .header_perfil{
+        width: 150px;
+        height: 150px;
+        border-radius:50%;
+    }
+    
+    .main_about{
+        width: 100%;
+        padding-top: 90px;
+        padding-bottom: 30px;
+    }
+    
+    .main_title{
+        font-weight:600;
+    }
+
+    .main_habilidades{
+        margin-top: 50px;
+    }
+    
+    .main_skills{
+        margin-bottom: 30px;
+        font-size: 25px;
+    }
+    
+    .tamanio{
+        margin-bottom: 40px;
+    }
+
+    
+    .tamanio img{
+    width:200px;
+    margin-bottom: 40px;
+    }
+
+    .main_services{
+    margin-top: 60px;
+    }
+
+    .main_services_world{
+        padding: 0px 0px;
+    }
+    
+    .services_icons{
+        width:90%;
+        margin-top: 50px;
+
+    }
+
+    .main_portafolio{
+        margin-top:50px;
+        margin-bottom: 0px;
+    }
+    
+    
+    .main_projects figure{
+        width: 100%;
+        height: 170px;
+    }
+    
+    .main_projects figure img{
+        filter:brightness(40%);
+    }
+
+
+    .main_projects figure .proj_text p{
+        transform: translate(0);
+    }
+    
+    .main_projects figure .proj_text h3{
+        transform: translate(0);
+    }
+    
+    .main_projects figure:hover img{
+        filter: blur(0);
+        filter:brightness(40%);
+    }
+    
+    .main_projects figure:hover .proj_text p{
+        transform: translate(0%);
+    }
+    .main_projects figure:hover .proj_text h3{
+        transform: translate(0%);
+    }
+
+
+
+    .zona_email{
+        width:90%; 
+        margin: auto;
+        margin-top: 50px;
+    }
+
+}
+
